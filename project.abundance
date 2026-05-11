@@ -1,109 +1,109 @@
 {
-  "atomType": "Molecule",
-  "x": 0,
-  "y": 0,
-  "uniqueID": "20847efe-1951-41db-82be-ac0c5e291a67",
-  "name": "M4_NewArmBase",
-  "topLevel": true,
-  "allAtoms": [
-    {
-      "atomType": "Output",
-      "x": 0.9787735849056604,
-      "y": 0.4871287128712872,
-      "uniqueID": "60e082cd-e092-4537-93cd-1a9630ebc1aa",
-      "ioValues": [
+    "atomType": "Molecule",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "20847efe-1951-41db-82be-ac0c5e291a67",
+    "name": "M4_Belt_Anchor",
+    "topLevel": true,
+    "allAtoms": [
         {
-          "name": "number or geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
-    },
-    {
-      "atomType": "Export",
-      "x": 0.28915094339622643,
-      "y": 0.6514851485148515,
-      "uniqueID": "d8ddbccb-1daf-4266-8803-0d32bc4bc156",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
+            "atomType": "Output",
+            "x": 0.9787735849056604,
+            "y": 0.4871287128712872,
+            "uniqueID": "60e082cd-e092-4537-93cd-1a9630ebc1aa",
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "__GEOMETRY_INPUT__"
+                }
+            ]
         },
         {
-          "name": "File Type",
-          "ioValue": "STEP",
-          "currentEquation": "STL"
+            "atomType": "Export",
+            "x": 0.28915094339622643,
+            "y": 0.6514851485148515,
+            "uniqueID": "d8ddbccb-1daf-4266-8803-0d32bc4bc156",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STEP",
+                    "currentEquation": "STL"
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Belt Anchor",
+                    "currentEquation": "Belt Anchor"
+                }
+            ],
+            "type": "STEP",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "Belt Anchor"
         },
         {
-          "name": "Resolution (dpi)",
-          "ioValue": 96
+            "atomType": "Molecule",
+            "x": 0.15838247683235046,
+            "y": 0.3947990543735224,
+            "uniqueID": "887c8b5b-ae33-4501-a12f-4cc13d8342a8",
+            "name": "BeltAnchor",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "x": 0.8972198820556024,
+                    "y": 0.4940898345153665,
+                    "uniqueID": "4b50c039-dca6-42b6-9022-a667e2bfc9cf",
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Import",
+                    "x": 0.2232518955349621,
+                    "y": 0.44680851063829785,
+                    "uniqueID": "id-804",
+                    "fileName": "Belt Anchor (Half) - 10mm.stl",
+                    "name": "Import",
+                    "type": "STL",
+                    "repoOwner": "IDAbbott",
+                    "repoName": "M4_NewArmBase",
+                    "SVGwidth": 10
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "id-804",
+                    "ap2ID": "4b50c039-dca6-42b6-9022-a667e2bfc9cf"
+                }
+            ],
+            "fileTypeVersion": 1
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap2Name": "number or geometry",
+            "ap1ID": "887c8b5b-ae33-4501-a12f-4cc13d8342a8",
+            "ap2ID": "60e082cd-e092-4537-93cd-1a9630ebc1aa"
         },
         {
-          "name": "Part Name",
-          "ioValue": "Belt Anchor",
-          "currentEquation": "Belt Anchor"
+            "ap2Name": "geometry",
+            "ap1ID": "887c8b5b-ae33-4501-a12f-4cc13d8342a8",
+            "ap2ID": "d8ddbccb-1daf-4266-8803-0d32bc4bc156"
         }
-      ],
-      "type": "STEP",
-      "resolution": 96,
-      "importIndex": 0,
-      "partName": "Belt Anchor"
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.15838247683235046,
-      "y": 0.3947990543735224,
-      "uniqueID": "887c8b5b-ae33-4501-a12f-4cc13d8342a8",
-      "name": "BeltAnchor",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.8972198820556024,
-          "y": 0.4940898345153665,
-          "uniqueID": "4b50c039-dca6-42b6-9022-a667e2bfc9cf",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Import",
-          "x": 0.2232518955349621,
-          "y": 0.44680851063829785,
-          "uniqueID": "id-804",
-          "fileName": "Belt Anchor (Half) - 10mm.stl",
-          "name": "Import",
-          "type": "STL",
-          "repoOwner": "IDAbbott",
-          "repoName": "M4_NewArmBase",
-          "SVGwidth": 10
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-804",
-          "ap2ID": "4b50c039-dca6-42b6-9022-a667e2bfc9cf"
-        }
-      ],
-      "fileTypeVersion": 1
-    }
-  ],
-  "allConnectors": [
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "887c8b5b-ae33-4501-a12f-4cc13d8342a8",
-      "ap2ID": "60e082cd-e092-4537-93cd-1a9630ebc1aa"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "887c8b5b-ae33-4501-a12f-4cc13d8342a8",
-      "ap2ID": "d8ddbccb-1daf-4266-8803-0d32bc4bc156"
-    }
-  ],
-  "unitsKey": "MM",
-  "fileTypeVersion": 1,
-  "filetypeVersion": 1
+    ],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1
 }
